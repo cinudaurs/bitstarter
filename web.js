@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express.createServer(express.logger());
-app.get('/', function(request, response){
+var content ;
+
   
-  var content;
   fs = require('fs')
   fs.readFile('./index.html', 'utf8', function (err,data) {
   if (err) {
@@ -11,9 +11,9 @@ app.get('/', function(request, response){
   buf = new Buffer(data);
   len = buf.write(data.toString());
   content = buf.toString('utf8', 0, len);
-  
-});
+  app.get('/', function(request, response){
   response.send(content);
+});
 });
 
 
