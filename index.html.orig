@@ -6,79 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800"
           rel="stylesheet" type="text/css">
     <style type="text/css">
 
-      /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
+            /* Large desktop */
+        @media (min-width: 980px) {
+            body {
+                padding-top: 60px;
+            }
+            .linediv-l {
+                border-right: 1px white solid;
+            }
+            .linediv-r {
+                border-left: 1px white solid;
+            }
         }
-       .linediv-l {
-         border-right: 1px white solid;
+
+            /* Landscape phones and down */
+        @media (max-width: 480px) {
+            .copy {
+                padding: 2.5% 10%;
+            }
+            .linediv-l {
+                border-bottom: 1px white solid;
+            }
+            .linediv-r {
+                border-top: 1px white solid;
+            }
         }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
+            /* All form factors */
 
-      /* All form factors */
+            /* Main body and headings */
+        body{
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        }
+        .heading, .subheading {
+            font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+            text-align: center;
+        }
+        p.lead {
+            padding-top: 1.5%;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 24px;
+        }
 
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
+            /* Video pitch and Action */
+        .pitch {
+            padding: 2.5% 0%;
+        }
+        .order {
+            padding: 2% 0%;
+        }
+        .actions {
+            background-color: #343434;
+            padding: 3% 0%;
+        }
+        .video, .thermometer, .order, .social, .statistics {
+            text-align: center;
+        }
+        .statistics h3, .statistics p {
+            color: white;
+        }
 
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-    /* Marketing Copy and Footer */
+            /* Marketing Copy and Footer */
         .copy {
             padding-top: 2.5%;
             padding-bottom: 2.5%;
@@ -134,7 +134,7 @@
     <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
         <div class="span12">
-            <h1>0Degrees</h1>
+            <h1>Zer0Degrees</h1>
         </div>
     </div>
     <div class="row-fluid subheading">
@@ -149,59 +149,18 @@
             <img class="img-polaroid" src="http://farm6.staticflickr.com/5482/9349411618_9f6dab2a74.jpg">
         </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="row-fluid">
-          <div class="span8 offset2">
-            <div class="row-fluid statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
-            </div>
-          </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
-          </div>
-        </div>
-        </div>
-      </div>
+        <div class="sharing">
+            <p>Please share and let your friends share </p>
+
+           <!-- <a href="http://twitter.com/share?text=0Degrees%20for%20connecting%20missed%20connections
+%20&url=http://ec2-67-202-47-47.compute-1.amazonaws.com:8080/#">Share This on Twitter</a> -->
+           <div style="padding-bottom:20px; padding-top:10px;" ><!-- Hupso Share Buttons - http://www.hupso.com/share/ -->
+<a class="hupso_counters" href="http://www.hupso.com/share/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.hupso.com']);"><img class="colorbox-3289"  src="http://static.hupso.com/share/buttons/share-small.png" style="border:0px; padding-top:2px; float:left;" alt="Share Button"/></a><script type="text/javascript">var hupso_services_c=new Array("twitter","facebook_like","facebook_send","google","pinterest");var hupso_twitter_via = "0Degrees";var hupso_counters_lang = "en_US";var hupso_image_folder_url = "";var hupso_twitter_via="z0degrees";var hupso_title_c="0Degrees, connecting missed connections";</script><script type="text/javascript" src="http://static.hupso.com/share/js/counters.js"></script><!-- Hupso Share Buttons --></div><span id="pty_trigger">
+</span>
+</div>
+
+
+    </div>
 
     <!-- Beyond this part the marketing copy begins. -->
     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
@@ -266,9 +225,7 @@
 
 
         </div>
-
-       
- <div class="span5 asset">
+        <div class="span5 asset">
             <img class="img-polaroid" src="http://farm8.staticflickr.com/7374/9349822026_a71e307f9a.jpg">
         </div>
     </div>
@@ -312,16 +269,6 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
     <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
     <!-- http://creativecommons.org/licenses/ -->
     <div class="row-fluid footer">
@@ -332,9 +279,8 @@
                 </a>, without all the cruft that would otherwise be
                 put at the bottom of the page.</p>
         </div>
-      </div>
     </div>
-
+</div>
 </body>
 </html>
 
